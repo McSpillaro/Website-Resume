@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Square with Elements</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #d4b89d;
+        }
+
+        .center-square {
+            position: relative;
+            width: 100vmin; /* 100% of viewport width or height, whichever is smaller */
+            height: 100vmin;
+            max-width: 600px; /* Optional: Set a maximum width for the square */
+            max-height: 600px; /* Optional: Set a maximum height for the square */
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #profile-picture {
+            width: 150px; /* Adjust as needed */
+            height: 150px; /* Adjust as needed */
+            border-radius: 50%; /* Makes it a circle if it's a square image */
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333;
+        }
+
+        p {
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-square">
+        <div class="content">
+            <img id="profile-picture" src="path-to-your-image.jpg" alt="Profile Picture">
+            <h1>Your Name</h1>
+            <p>Job Title</p>
+        </div>
+    </div>
+</body>
+</html>

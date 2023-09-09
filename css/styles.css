@@ -1,0 +1,34 @@
+/* ELEMENTS */
+body {
+    background-color: #d4b89d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* CUSTOM FONTS */
+@font-face {
+    font-family: 'caviar-dreams-bold';
+    src: url("../css/Fonts/CaviarDreams_Bold.ttf") 
+        format('truetype');
+}
+
+/* IDs */
+#profile-picture {
+    width: 250px;
+    height: 250px;
+}
+
+/* CLASSES */
+.page-header {
+    font-family: 'caviar-dreams-bold';
+    color: wheat;
+}
+
+.center-square {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
