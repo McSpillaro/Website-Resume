@@ -8,11 +8,26 @@ body {
     margin: 0;
 }
 
-/* CUSTOM FONTS */
+h1 {
+    font-family: 'caviar-dreams-bold';
+    color: wheat;
+}
+
+h2 {
+    font-family: 'caviar-dreams-bold';
+    color: wheat;
+}
+
+/* FUNCTIONS */
 @font-face {
     font-family: 'caviar-dreams-bold';
-    src: url("../css/Fonts/CaviarDreams_Bold.ttf") 
+    src: url("Fonts/CaviarDreams_Bold.ttf") 
         format('truetype');
+}
+
+@keyframes moveUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
 }
 
 /* IDs */
@@ -21,14 +36,26 @@ body {
     height: 250px;
 }
 
-/* CLASSES */
-.page-header {
-    font-family: 'caviar-dreams-bold';
-    color: wheat;
+#pageheading, #subheading {
+margin: 10px 0;
 }
 
+#subheading {
+
+}
+
+/* CLASSES */
 .center-square {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
     background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: moveUp 1s forwards;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
