@@ -38,19 +38,16 @@ body {
 }
 
 /* CLASSES */
-.top-header {
-    background-color: rgb(12, 12, 12);
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
+.contact {
+    font-family: comfortaa-bold;
+    display: none;
+    color: #ffffff;
+    padding: 11px; /* Add padding to the content inside */
 }
 
-.top-header h1 {
-    margin: 0;
-    font-family: caviar-dreams-bold;
+.contact.active {
+    display: inline-block; /* Show the contact info inline */
+    margin-left: 10px; /* Add spacing between contact details */
 }
 
 .container {
@@ -63,4 +60,23 @@ body {
     background-color: #a0a0a0;
     padding: 20px;
     margin-bottom: 20px; /* Add space between sections */
+}
+
+.top_header {
+    background-color: rgb(12, 12, 12);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.top_header h1 {
+    margin: 0;
+    font-family: caviar-dreams-bold;
+}
+
+.top_header:hover {
+    color: #323232;
 }
