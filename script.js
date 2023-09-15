@@ -6,3 +6,15 @@ window.addEventListener('scroll', function() {
         square.style.animation = 'moveUp 1s forwards';
     }
 });
+
+function toggleHeader() {
+    var header = document.getElementById('header');
+    var nameElement = header.querySelector('h1');
+
+    if (nameElement.textContent === 'ERNEST SPILLER') {
+        nameElement.textContent = 'New Information';
+        setTimeout(function() {
+            nameElement.textContent = 'ERNEST SPILLER';
+        }, 3000); // Reverts back to 'Your Name' after 3 seconds
+    }
+}

@@ -4,51 +4,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, ini tial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="script.js"></script>
     <title>Ernest Spiller</title>
-</head>
+</head> 
 
 <body>
-
-    <!-- PAGE 1 -->
-    <div class="center-square">
-        <div class="content">
-            <h1 id="pageheading">ERNEST SPILLER</h1>
-            <img id="profile-picture" src="Images/Profile Picture.JPG" alt="A portrait of the creator.">
-            <h2 id="subheading">Education</h2>
+    <!-- TOP HEADER -->
+    <div class="top-header" id="header">
+        <h1 onclick="toggleHeader()">ERNEST SPILLER</h1>
+        <div class="contact" id="contact-info">
+            <p>e.spiller2002@gmail.com</p>
+            <p>(951) 775-9828</p>
+            <p>linkedin.com/in/ernestspiller/</p>
         </div>
     </div>
 
-    <!-- MAIN NAVIGATION -->
-    <div class="navigation">
-        <button onclick="loadPage('page1')">Homepage</button>
-        <button onclick="loadPage('page2')">Education</button>
-        <button onclick="loadPage('page3')">Technical Skills</button>
-        <button onclick="loadPage('page4')">Experiences</button>
+    <!-- PAGES CONTENTS -->
+    <div class="container">
+        <!-- PAGE 1 -->
+        <div class="section">
+            <h1 id="pageheading"></h1>
+            <h2 id="subheading"></h2>
+        </div>
+
+        <!-- PAGE 2 -->
+        <div class="section">
+
+        </div>
+
+        <!-- PAGE 3 -->
+        <div class="section">
+            
+        </div>
+        
     </div>
-
-    <!-- Content for PAGE 1 -->
-    <div id="page1" class="page">
-
-    </div>
-
-    <!-- Content for PAGE 2 -->
-    <div id="page2" class="page">
-
-    </div>
-
-    <!-- Content for PAGE 3 -->
-    <div id="page3" class="page">
-
-    </div>
-
-    <!-- Content for PAGE 4 -->
-    <div id="page4" class="page">
-
-    </div>
-
 </body>
 
 </html>
