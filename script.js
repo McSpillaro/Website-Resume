@@ -21,3 +21,7 @@ function toggleHeader() {
         }, 3000);
     }
 }
+
+function SE_section() { // Skills & Experience section
+    var 
+}
