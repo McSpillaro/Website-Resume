@@ -28,13 +28,17 @@ body {
 }
 
 /* IDs */
+#contact-info { 
+    color: white;
+}
+
+#education {
+    background-color: rgb(195, 195, 195);
+}
+
 #name {
     color: white;
     font-family: lemonmilk-bold;
-}
-
-#contact-info {
-    color: white;
 }
 
 /* CLASSES */
@@ -57,14 +61,18 @@ body {
 }
 
 .section {
-    background-color: #a0a0a0;
-    padding: 20px;
-    margin-bottom: 20px; /* Add space between sections */
+    background-color: #a13737;
+    margin-bottom: 20px auto; /* Add space between sections */
+}
+
+.tite_bar {
+    background-color: white;
+    color: #323232;
 }
 
 .top_header {
     background-color: rgb(12, 12, 12);
-    color: #fff;
+    color: #eee;
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -73,10 +81,17 @@ body {
 }
 
 .top_header h1 {
+    font-size: 120%;
     margin: 0;
     font-family: caviar-dreams-bold;
 }
 
 .top_header:hover {
-    color: #323232;
+    background-color: #d3adff;
+    color: #7700ff;
+    transition: all 0.2s;
+}
+
+.top_header:default{
+    transition: all 0.2s;
 }
