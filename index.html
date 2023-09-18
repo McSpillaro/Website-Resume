@@ -22,55 +22,53 @@
     </div>
 
     <!-- PAGES CONTENTS -->
-    <div class="container">
-        <!-- PAGE 1 -->
-        <div class="section" id="education">
-            <h1 id="pageheading">UNIVERSITY OF CALIFORNIA, RIVERSIDE</h1>
-            <h2 id="subheading">BACHELOR OF SCIENCE, CHEMICAL ENGINEERING</h2>
-            <button onclick="open_edu()" id="courses">RELEVANT COURSEWORK</button>
-            <button onclick="open_edu()" id="gpa">GPA</button>
-            <button onclick="open_edu()" id="awards">AWARDS</button>
-        </div>
+    <!-- PAGE 1 -->
+    <div class="section" id="education">
+        <h1 id="school_name">UNIVERSITY OF CALIFORNIA, RIVERSIDE</h1>
+        <h2 id="school_major">BACHELOR OF SCIENCE, CHEMICAL ENGINEERING</h2>
+        <button onclick="open_edu()" id="courses">RELEVANT COURSEWORK</button>
+        <button onclick="open_edu()" id="gpa">GPA</button>
+        <button onclick="open_edu()" id="awards">AWARDS</button>
+    </div>
 
-        <!-- SECTIONS -->
-        <div class="section">
-            <!-- PAGE 2 -->
-            <div class="title_bar" id="skills">
-                <h1>TECHNICAL SKILLS</h1>
-                <!-- Buttons for navigation -->
-                <div class="nav">
-                    <button onclick="open_skills()" id="software">SOFTWARE & PROGRAMMING</button>
-                    <button onclick="open_skills()" id="instrumentation">INSTRUMENTATION</button>
-                    <button onclick="open_skills()" id="lab">LABORATORY</button>
-                </div>
-                <!-- Location for all info from each section is displayed here -->
-                <div class="info_panel">
-
-                </div>
+    <!-- SECTIONS -->
+    <!-- PAGE 2 -->
+    <div class="section" id="section_skills">
+        <div class="title_bar" id="title_skills">
+            <h1>TECHNICAL SKILLS</h1>
+            <!-- Buttons for navigation -->
+            <div class="nav">
+                <button onclick="open_skills()" id="software">SOFTWARE & PROGRAMMING</button>
+                <button onclick="open_skills()" id="instrumentation">INSTRUMENTATION</button>
+                <button onclick="open_skills()" id="lab">LABORATORY</button>
             </div>
-            <!-- PAGE 3 -->
-            <div class="title_bar" id="experience">
-                <h1>EXPERIENCE</h1>
-                <!-- Buttons for navigation -->
-                <div class="nav">
-                    <button onclick="open_exp()" id="lab">LABORATORY</button>
-                    <button onclick="open_exp()" id="project">PROJECT</button>
-                    <button onclick="open_exp()" id="work">WORK</button>
-                </div>
-                <!-- Location for all info from each section is displayed here -->
-                <div class="info_panel"> <!-- Each sub div is its own "page" with info -->
-                    <div class="lab_info">
-                        <button onclick="open_exp()" id="lab">UNDERGRADUATE RESEARCHER</button>
-                        <button onclick="open_exp()" id="lab">ELECTROPHILIC AROMATIC SUBSTITUTION</button>
-                    </div>
-                    <div class="project_info">
-                        <button onclick="open_exp()" id="project">G-CODE SCRIPT</button>
-                    </div>
-                    <div class="work_info">
-                        <button onclick="open_exp()" id="lab">BARISTA</button>
-                        <button onclick="open_exp()" id="lab">INSTRUCTOR</button>
-                    </div>
-                </div>
+            <!-- Location for all info from each section is displayed here -->
+            <div class="info_panel">
+
+            </div>
+        </div>
+    </div>
+    <!-- PAGE 3 -->
+    <div class="section" id="section_exp">
+        <h1>EXPERIENCE</h1>
+        <!-- Buttons for navigation -->
+        <div class="nav">
+            <button onclick="open_exp()" id="lab">LABORATORY</button>
+            <button onclick="open_exp()" id="project">PROJECT</button>
+            <button onclick="open_exp()" id="work">WORK</button>
+        </div>
+        <!-- Location for all info from each section is displayed here -->
+        <div class="info_panel"> <!-- Each sub div is its own "page" with info -->
+            <div class="lab_info">
+                <button onclick="open_exp()" id="undergrad_research">UNDERGRADUATE RESEARCHER</button>
+                <button onclick="open_exp()" id="eas_ochem">ELECTROPHILIC AROMATIC SUBSTITUTION</button>
+            </div>
+            <div class="project_info">
+                <button onclick="open_exp()" id="gcode_script">G-CODE SCRIPT</button>
+            </div>
+            <div class="work_info">
+                <button onclick="open_exp()" id="barista">BARISTA</button>
+                <button onclick="open_exp()" id="instructor">INSTRUCTOR</button>
             </div>
         </div>
     </div>
