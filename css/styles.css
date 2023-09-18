@@ -1,9 +1,7 @@
 /* ELEMENTS */
 body {
     background-color: #323232;
-    display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
 }
@@ -73,7 +71,7 @@ body {
     height: 100vh;
 }
 
-.tite_bar {
+.title_bar {
     background-color: white;
     color: #323232;
 }
