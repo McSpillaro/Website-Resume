@@ -1,3 +1,14 @@
+// CONSTANTS
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    })
+}, { threshold: 0 })
+
 // Top header hover animation
 function toggleHeader() {
     var header = document.getElementById('header');
@@ -14,6 +25,26 @@ function toggleHeader() {
     }
 }
 
-function SE_section() { // Skills & Experience section
+// Skills & Experience section
+function SE_section() {
     
 }
+
+// School section scroll animation
+function animateSections() {
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const offset = window.innerHeight - rect.top;
+
+        if (offset >= 0 && offset <= window.innerHeight) {
+            const opacity = 1 - (offset / window.innerHeight);
+            const translateY = 20 * (offset / window.innerHeight);
+
+            section.style.opacity = opacity;
+            section.style.transform = `translateY(${translateY}px)`;
+        }
+    });
+}
+
+// Listen for scroll events to trigger animation
+window.addEventListener('scroll', animateSections);
