@@ -1,4 +1,5 @@
 // CREATE THE APP DEPENDENICES
+npm install create-react-app // IF creating app newly
 npx create-react-app my-app
 NOTE: replace "create-react-app my-app" with file folder location
 
