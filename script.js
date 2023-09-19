@@ -1,3 +1,6 @@
+// IMPORTS
+import * as THREE from 'three';
+
 // CONSTANTS
 const sections = document.querySelectorAll('.section');
 
