@@ -9,18 +9,107 @@ body {
 /* FUNCTIONS */
 @font-face {
   font-family: 'caviar-dreams-bold';
-  src: url("src/fonts/CaviarDreams_Bold.ttf") 
+  src: url("fonts/CaviarDreams_Bold.ttf") 
       format('truetype');
 }
 
 @font-face {
   font-family: 'comfortaa-bold';
-  src: url("src/fonts/Comfortaa-Bold.ttf")
+  src: url("fonts/Comfortaa-Bold.ttf")
       format('truetype');
 }
 
 @font-face {
   font-family: 'lemonmilk-bold';
-  src: url("src/fonts/LEMONMILK-Bold.otf")
+  src: url("fonts/LEMONMILK-Bold.otf")
       format('postscript');
+}
+
+/* IDs */
+#contact-info { 
+  color: white;
+}
+
+#education {
+  margin-top: 45vh;
+  max-height: 100vh;
+}
+
+#name {
+  color: white;
+  font-family: lemonmilk-bold;
+}
+
+#section_exp {
+  background-color: red;
+}
+
+#section_skills {
+  background-color: cyan;
+}
+
+/* CLASSES */
+.contact {
+  font-family: comfortaa-bold;
+  display: none;
+  color: #ffffff;
+  padding: 11px; /* Add padding to the content inside */
+}
+
+.contact.active {
+  display: inline-block; /* Show the contact info inline */
+  margin-left: 10px; /* Add spacing between contact details */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.school {
+  max-width: 100%;
+  width: 100%;
+}
+
+.section {
+  opacity: 1;
+  transform: translateY(0);
+
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  text-align: center;
+}
+
+.title_bar {
+  background-color: white;
+  color: #323232;
+}
+
+.top_header {
+  background-color: rgb(12, 12, 12);
+  color: #eee;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.top_header h1 {
+  font-size: 120%;
+  margin: 0;
+  font-family: caviar-dreams-bold;
+}
+
+.top_header:hover {
+  background-color: #d3adff;
+  color: #7700ff;
+  transition: all 0.2s;
+}
+
+.top_header:default{
+  transition: all 0.2s;
 }
