@@ -1,79 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-<head>
-  <link>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="../src/index.css" />
-  <script src="../src/App.js"></script>
-  <title>Ernest Spiller</title>
-</head>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-<body>
-  <div id="root"></div>
-  <!-- TOP HEADER -->
-  <div class="top_header" id="header">
-    <h1 onclick="toggleHeader()">ERNEST SPILLER</h1>
-    <div class="contact" id="contact_info">
-      <span>e.spiller2002@gmail.com</span>
-      <span>(951) 775-9828</span>
-      <span>linkedin.com/in/ernestspiller/</span>
-    </div>
-  </div>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-  <!-- PAGES CONTENTS -->
-  <!-- PAGE 1 -->
-  <section class="section" id="education">
-    <h1 class="school" id="school_name">UNIVERSITY OF CALIFORNIA, RIVERSIDE</h1>
-    <h2 class="school" id="school_major">BACHELOR OF SCIENCE, CHEMICAL ENGINEERING</h2>
-    <button onclick="open_edu()" id="courses">RELEVANT COURSEWORK</button>
-    <button onclick="open_edu()" id="gpa">GPA</button>
-    <button onclick="open_edu()" id="awards">AWARDS</button>
-  </section>
-
-  <!-- SECTIONS -->
-  <!-- PAGE 2 -->
-  <section class="section" id="section_skills">
-    <div class="title_bar" id="title_skills">
-      <h1>TECHNICAL SKILLS</h1>
-      <!-- Buttons for navigation -->
-      <div class="nav">
-        <button onclick="open_skills()" id="software">SOFTWARE & PROGRAMMING</button>
-        <button onclick="open_skills()" id="instrumentation">INSTRUMENTATION</button>
-        <button onclick="open_skills()" id="lab">LABORATORY</button>
-      </div>
-      <!-- Location for all info from each section is displayed here -->
-      <div class="info_panel">
-
-      </div>
-    </div>
-  </section>
-  <!-- PAGE 3 -->
-  <section class="section" id="section_exp">
-    <h1>EXPERIENCE</h1>
-    <!-- Buttons for navigation -->
-    <div class="nav">
-      <button onclick="open_exp()" id="lab">LABORATORY</button>
-      <button onclick="open_exp()" id="project">PROJECT</button>
-      <button onclick="open_exp()" id="work">WORK</button>
-    </div>
-    <!-- Location for all info from each section is displayed here -->
-    <div class="info_panel"> <!-- Each sub div is its own "page" with info -->
-      <div class="lab_info">
-        <button onclick="open_exp()" id="undergrad_research">UNDERGRADUATE RESEARCHER</button>
-        <button onclick="open_exp()" id="eas_ochem">ELECTROPHILIC AROMATIC SUBSTITUTION</button>
-      </div>
-      <div class="project_info">
-        <button onclick="open_exp()" id="gcode_script">G-CODE SCRIPT</button>
-      </div>
-      <div class="work_info">
-        <button onclick="open_exp()" id="barista">BARISTA</button>
-        <button onclick="open_exp()" id="instructor">INSTRUCTOR</button>
-      </div>
-    </div>
-  </section>
-</body>
-
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
