@@ -1,0 +1,7 @@
+// CREATE THE APP DEPENDENICES
+npx create-react-app my-app
+NOTE: replace "create-react-app my-app" with file folder location
+
+// TO START THE SERVER
+cd <file directory>
+npm start
