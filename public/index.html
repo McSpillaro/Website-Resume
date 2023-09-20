@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, ini tial-scale=1.0">
     
     <link rel="stylesheet" href="../src/styles.css">
-    <script src="../src/script.js"></script>
+    <script defer src="../src/script.js"></script>
 
     <title>Ernest Spiller</title>
 </head> 
@@ -24,7 +24,7 @@
     </div>
 
     <!-- EDUCATION SECTION -->
-    <section id="section_education">
+    <section class="visible" id="section_education">
         <h1 id="name_school">UNIVERSITY OF CALIFORNIA, RIVERSIDE</h1>
         <h2 id="name_major">BACHELOR OF SCIENCE, CHEMICAL ENGINEERING</h2>
         <button class="button_edu">RELEVANT COURSEWORK</button>
@@ -36,24 +36,25 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section class="section" id="section_skills">
-        <div class="title_bar" id="title_skills">
-            <h1>TECHNICAL SKILLS</h1>
-            <!-- Buttons for navigation -->
-            <div class="nav">
-                <button onclick="open_skills()" id="software">SOFTWARE & PROGRAMMING</button>
-                <button onclick="open_skills()" id="instrumentation">INSTRUMENTATION</button>
-                <button onclick="open_skills()" id="lab">LABORATORY</button>
-            </div>
-            <!-- Location for all info from each section is displayed here -->
-            <div class="info_panel">
-
-            </div>
+    <section class="visible" id="section_skills">
+        <h1>TECHNICAL SKILLS</h1>
+        <!-- Buttons for navigation; should be on the left side -->
+        <div class="nav">
+            <button onclick="open_skills()" id="software">SOFTWARE & PROGRAMMING</button>
+            <button onclick="open_skills()" id="instrumentation">INSTRUMENTATION</button>
+            <button onclick="open_skills()" id="lab">LABORATORY</button>
+        </div>
+        <!-- Location for all info from each sub-section is displayed here -->
+        <div class="info_panel">
+            <!-- Info updated by JavaScript -->
+            <div id="info_software"></div>
+            <div id="info_instrumentation"></div>
+            <div id="info_lab"></div>
         </div>
     </section>
 
     <!-- EXPERIENCE SECTION -->
-    <section class="section" id="section_exp">
+    <section class="visible" id="section_experience">
         <h1>EXPERIENCE</h1>
         <!-- Buttons for navigation -->
         <div class="nav">

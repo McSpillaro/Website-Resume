@@ -1,4 +1,4 @@
-/* FUNCTIONS */
+/*#region -- FUNCTIONS */
 @font-face {
     font-family: 'CaviarDreams-B';
     src: url("Fonts/CaviarDreams_Bold.ttf") 
@@ -14,11 +14,13 @@
     src: url("Fonts/LEMONMILK-Bold.otf")
         format('postscript');
 }
+/*#endregion*/
 
-/* ELEMENTS */
+/*#region -- ELEMENTS */
+/*#endregion*/
 
+/*#region -- IDs */
+/*#endregion*/
 
-/* IDs */
-
-
-/* CLASSES */
+/*#region -- CLASSES */
+/*#endregion*/
