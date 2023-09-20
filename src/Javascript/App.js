@@ -1,9 +1,9 @@
 // IMPORTS
-import Message from './Message';
+import Header from './header';
 
 function App() {
   return (
-    <div><Message /></div>
+    <div><Header /></div>
   );
 }
 
