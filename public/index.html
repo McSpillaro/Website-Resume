@@ -5,35 +5,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, ini tial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="script.js"></script>
-    <script src="GSAP\minified\gsap.min.js"></script>
+    
+    <link rel="stylesheet" href="../src/styles.css">
+    <script src="../src/script.js"></script>
+
     <title>Ernest Spiller</title>
 </head> 
 
 <body>
-    <!-- TOP HEADER -->
-    <div class="top_header" id="header">
-        <h1 onclick="toggleHeader()">ERNEST SPILLER</h1>
-        <div class="contact" id="contact_info">
+    <!-- TOP BAR -->
+    <div id="top_bar">
+        <button id="top_name">ERNEST SPILLER</button>
+        <div id="top_contacts">
             <span>e.spiller2002@gmail.com</span>
             <span>(951) 775-9828</span>
             <span>linkedin.com/in/ernestspiller/</span>
         </div>
     </div>
 
-    <!-- PAGES CONTENTS -->
-    <!-- PAGE 1 -->
-    <section class="section" id="education">
-        <h1 class="school" id="school_name">UNIVERSITY OF CALIFORNIA, RIVERSIDE</h1>
-        <h2 class="school" id="school_major">BACHELOR OF SCIENCE, CHEMICAL ENGINEERING</h2>
-        <button onclick="open_edu()" id="courses">RELEVANT COURSEWORK</button>
-        <button onclick="open_edu()" id="gpa">GPA</button>
-        <button onclick="open_edu()" id="awards">AWARDS</button>
+    <!-- EDUCATION SECTION -->
+    <section id="section_education">
+        
     </section>
 
-    <!-- SECTIONS -->
-    <!-- PAGE 2 -->
+    <!-- SKILLS SECTION -->
     <section class="section" id="section_skills">
         <div class="title_bar" id="title_skills">
             <h1>TECHNICAL SKILLS</h1>
@@ -49,7 +44,8 @@
             </div>
         </div>
     </section>
-    <!-- PAGE 3 -->
+
+    <!-- EXPERIENCE SECTION -->
     <section class="section" id="section_exp">
         <h1>EXPERIENCE</h1>
         <!-- Buttons for navigation -->
