@@ -27,9 +27,9 @@ const skillsLabTech =[
     "Centrifugation",
 ]
 
-const contentElement_Software = document.getElementById('info_software')
-const contentElement_Instrumentation = document.getElementById('info_instrumentation')
-const contentElement_Lab = document.getElementById('info_lab')
+const contentElement_Software = document.getElementById('info_software_skills')
+const contentElement_Instrumentation = document.getElementById('info_instrumentation_skills')
+const contentElement_Lab = document.getElementById('info_lab_skills')
 
 function updateSkills() {
     contentElement_Software.innerHTML = "<ul>" + skillsSoftware.map(item => `<li>${item}</li>`).join('') + "</ul>";

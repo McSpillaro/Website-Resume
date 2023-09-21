@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'LemonMilk-B';
+    src: url("../fonts/LEMONMILK-Bold.otf")
+        format('postscript');
+}
+
+section {
+    display: grid; /* this makes it easy to center objects in section */
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-family: LemonMilk-B;
+}

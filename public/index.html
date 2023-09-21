@@ -6,8 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, ini tial-scale=1.0">
     
-    <link rel="stylesheet" href="../src/styles.css">
-    <script defer src="../src/script.js"></script>
+    <!-- #region -- CSS -->
+    <link rel="stylesheet" href="../src/dist/bundle.css">
+    <!-- #endregion -->
+
+    <!--#region -- SCRIPTS -->
+    <script defer src="../src/dist/bundle.js"></script>
+    <!-- #endregion -->
 
     <title>Ernest Spiller</title>
 </head> 
@@ -40,40 +45,42 @@
         <h1>TECHNICAL SKILLS</h1>
         <!-- Buttons for navigation; should be on the left side -->
         <div class="nav">
-            <button onclick="open_skills()" id="software">SOFTWARE & PROGRAMMING</button>
-            <button onclick="open_skills()" id="instrumentation">INSTRUMENTATION</button>
-            <button onclick="open_skills()" id="lab">LABORATORY</button>
+            <button onclick="open_skills()" id="software_skills">SOFTWARE & PROGRAMMING</button>
+            <button onclick="open_skills()" id="instrumentation_skills">INSTRUMENTATION</button>
+            <button onclick="open_skills()" id="lab_skills">LABORATORY</button>
         </div>
         <!-- Location for all info from each sub-section is displayed here -->
         <div class="info_panel">
             <!-- Info updated by JavaScript -->
-            <div id="info_software"></div>
-            <div id="info_instrumentation"></div>
-            <div id="info_lab"></div>
+            <div id="info_software_skills"></div>
+            <div id="info_instrumentation_skills"></div>
+            <div id="info_lab_skills"></div>
         </div>
     </section>
 
     <!-- EXPERIENCE SECTION -->
     <section class="visible" id="section_experience">
         <h1>EXPERIENCE</h1>
-        <!-- Buttons for navigation -->
+        <!-- Buttons for navigation; should be on the left side -->
         <div class="nav">
-            <button onclick="open_exp()" id="lab">LABORATORY</button>
-            <button onclick="open_exp()" id="project">PROJECT</button>
-            <button onclick="open_exp()" id="work">WORK</button>
+            <button onclick="open_exp()" id="lab_experience">LABORATORY</button>
+            <button onclick="open_exp()" id="project_experience">PROJECT</button>
+            <button onclick="open_exp()" id="work_experience">WORK</button>
         </div>
         <!-- Location for all info from each section is displayed here -->
         <div class="info_panel"> <!-- Each sub div is its own "page" with info -->
             <div class="lab_info">
-                <button onclick="open_exp()" id="undergrad_research">UNDERGRADUATE RESEARCHER</button>
-                <button onclick="open_exp()" id="eas_ochem">ELECTROPHILIC AROMATIC SUBSTITUTION</button>
+                <button onclick="openUndergradInfo()">UNDERGRADUATE RESEARCHER</button>
+                <div class="expInfoBox" id="undergrad_research"></div>
+                <button onclick="openChemInfo()">ELECTROPHILIC AROMATIC SUBSTITUTION</button>
+                <div class="expInfoBox" id="eas_ochem"></div>
             </div>
             <div class="project_info">
-                <button onclick="open_exp()" id="gcode_script">G-CODE SCRIPT</button>
+                <button onclick="openGCodeInfo()" id="gcode_script">G-CODE SCRIPT</button>
             </div>
             <div class="work_info">
-                <button onclick="open_exp()" id="barista">BARISTA</button>
-                <button onclick="open_exp()" id="instructor">INSTRUCTOR</button>
+                <button onclick="openBaristaInfo()" id="barista">BARISTA</button>
+                <button onclick="openInstructorInfo()" id="instructor">INSTRUCTOR</button>
             </div>
         </div>
     </section>
