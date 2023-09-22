@@ -7,7 +7,7 @@ dropdowns.forEach(dropdown => {
     const select = dropdown.querySelector('.select');
     const caret = dropdown.querySelector('.caret');
     const menu = dropdown.querySelector('.menu');
-    const options = dropdown.querySelector('.menu li');
+    const options = dropdown.querySelectorAll('.menu li');
     const selected = dropdown.querySelector('.selected');
 
     // Click evevnt to the select element
@@ -17,7 +17,7 @@ dropdowns.forEach(dropdown => {
         // Add the rotate styles to the caret element
         caret.classList.toggle('caret-rotate');
         // Add the open styles to the contact_info element
-        menu.classList.toggle('.menu-open');
+        menu.classList.toggle('menu-open');
     });
 
     // Loop through all option elements
@@ -41,4 +41,4 @@ dropdowns.forEach(dropdown => {
             option.classList.add('active');
         });
     });
-})
+});
