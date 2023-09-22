@@ -21,7 +21,6 @@
 
 .dropdown {
     position: relative;
-    margin: 2em;
     min-width: 15em;
 }
 
@@ -30,14 +29,17 @@
 }
 
 .select {
-    background: #2a2f3b;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     border: 2px #2a2f3b solid;
     border-radius: 0.5em;
     padding: 0.5em;
+
+    background: #2a2f3b;
+    color: white;
+    
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -49,7 +51,7 @@
 
 */
 
-.selected-clicked {
+.select-clicked {
     border: 2px #26489a solid;
     box-shadow: 0 0 0.8em #26489a
 }
@@ -73,7 +75,7 @@
     transform: rotate(180deg);
 }
 
-.contact_info {
+.menu {
     list-style: none;
     padding: 0.2em 0.5em;
     position: absolute;
@@ -96,7 +98,7 @@
     transition: 0.2s;
 }
 
-.contact_info li {
+.menu li {
     padding: 0.7em 0.5em;
     margin: 0.3em 0;
     border-radius: 0.5em;
@@ -104,7 +106,7 @@
     cursor: pointer;
 }
 
-.contact_info li:hover {
+.menu li:hover {
     background: #26489a;
 }
 
@@ -114,3 +116,14 @@ Active styles
 (added in JavaScript)
 
  */
+
+ .active {
+    background: #faf;
+ }
+
+ .contact_info-open {
+    display: block;
+    opacity: 1;
+ }
+
+ 
