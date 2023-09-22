@@ -1,5 +1,4 @@
 //#region -- CSS
-import './css/fontsFaces.css'
 import './css/sections.css'
 //#endregion
 
