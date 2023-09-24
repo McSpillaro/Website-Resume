@@ -1,13 +1,26 @@
-@font-face {
-    font-family: 'LemonMilk-B';
-    src: url("../fonts/LEMONMILK-Bold.otf")
-        format('postscript');
-}
+/* Josefin Sans - BOLD 700 */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 section {
     display: grid; /* this makes it easy to center objects in section */
     place-items: center;
     align-content: center;
     min-height: 100vh;
-    font-family: LemonMilk-B;
+    min-width: 100vh;
+   
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#section_education {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    
+    background: #ffffff;
 }
