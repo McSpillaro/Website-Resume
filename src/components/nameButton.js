@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             options.forEach(opt => {
                 opt.classList.remove('active');
             });
+                
             const copyableItems = document.getElementById('copyable');
 
             copyableItems.forEach(item => {
@@ -72,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     this.innerText = 'Copied!';
                 });
             });
+
             option.classList.add('active');
         });
     });
