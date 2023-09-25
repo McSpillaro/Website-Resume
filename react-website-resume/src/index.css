@@ -66,15 +66,25 @@ a {
   height: 20px;
 }
 
-.icon-animated {
-  animation: fadeInOut 0.5s forwards;
+.dropdown {
+  position: absolute;
+  top: 58px;
+  background-color: rgb(25, 25, 25);
+  border-radius: 50px;
+  overflow: hidden;
 }
 
-@keyframes fadeInOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+.menu-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+}
+
+.menu-item:hover {
+  background-color: #525357;
 }
