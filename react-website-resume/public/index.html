@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Ernest's Website Resume"
+      content="A simple resume website used to showcase videos, images, figures, and
+      everything else not typically included in a single-page resume."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Ernest Spiller</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- BUTTON DROPDOWN : TOP BAR -->
+    <header class="top_header">
+      <div class="dropdown">
+          <div class="select">
+              <div class="caret"></div>
+              <span class="selected">ERNEST SPILLER</span>
+              <div class="caret"></div>
+          </div>
+          <ul class="menu">
+              <!-- The 'copyable' id is for JavaScript : when clicked, copies data to clipboard -->
+              <li id="copyable" data-text="e.spiller2002@gmail.com">e.spiller2002@gmail.com</li>
+              <li id="copyable" data-text="(951) 775-9828">(951) 775-9828</li>
+              <li>linkedin.com/in/ernestspiller/</li>
+          </ul>
+      </div>
+    </header>
+
+    <!-- EDUCATION SECTION -->
+    <section id="section_education">
+      <h1 class="hidden" id="name_school">UNIVERSITY OF CALIFORNIA, RIVERSIDE</h1>
+      <h2 class="hidden" id="name_major">BACHELOR OF SCIENCE, CHEMICAL ENGINEERING</h2>
+      <button class="button_edu">RELEVANT COURSEWORK</button>
+      <button class="button_edu">GPA</button>
+      <button class="button_edu">AWARDS</button>
+      <div id="info_edu_box">
+          <p id=""></p>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="section_skills">
+      <h1 class="hidden">TECHNICAL SKILLS</h1>
+      <!-- Buttons for navigation; should be on the left side -->
+      <div class="nav">
+          <button onclick="open_skills()" id="software_skills">SOFTWARE & PROGRAMMING</button>
+          <button onclick="open_skills()" id="instrumentation_skills">INSTRUMENTATION</button>
+          <button onclick="open_skills()" id="lab_skills">LABORATORY</button>
+      </div>
+      <!-- Location for all info from each sub-section is displayed here -->
+      <div class="info_panel">
+          <!-- Info updated by JavaScript -->
+          <div id="info_software_skills"></div>
+          <div id="info_instrumentation_skills"></div>
+          <div id="info_lab_skills"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="section_experience">
+      <h1 class="hidden">EXPERIENCE</h1>
+      <!-- Buttons for navigation; should be on the left side -->
+      <div class="nav">
+          <button onclick="open_exp()" id="lab_experience">LABORATORY</button>
+          <button onclick="open_exp()" id="project_experience">PROJECT</button>
+          <button onclick="open_exp()" id="work_experience">WORK</button>
+      </div>
+      <!-- Location for all info from each section is displayed here -->
+      <div class="info_panel"> <!-- Each sub div is its own "page" with info -->
+          <div class="lab_info">
+              <button onclick="openUndergradInfo()">UNDERGRADUATE RESEARCHER</button>
+              <div class="expInfoBox" id="undergrad_research"></div>
+              <button onclick="openChemInfo()">ELECTROPHILIC AROMATIC SUBSTITUTION</button>
+              <div class="expInfoBox" id="eas_ochem"></div>
+          </div>
+          <div class="project_info">
+              <button onclick="openGCodeInfo()" id="gcode_script">G-CODE SCRIPT</button>
+          </div>
+          <div class="work_info">
+              <button onclick="openBaristaInfo()" id="barista">BARISTA</button>
+              <button onclick="openInstructorInfo()" id="instructor">INSTRUCTOR</button>
+          </div>
+      </div>
+    </section>
+  </body>
+</html>
