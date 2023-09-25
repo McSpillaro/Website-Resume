@@ -8,6 +8,15 @@
   --border: 1px solid;
   --border-radius: 8px;
   --speed: 500ms; /* animation speed */
+  --margin: auto;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul { /* new default list style */
@@ -19,6 +28,13 @@ ul { /* new default list style */
 a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+.experiences {
+  font-family: Josefin Sans;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1f1f1f;
 }
 
 .contactbar {
@@ -40,6 +56,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Josefin Sans;
 }
 
 .icon-button {
@@ -87,4 +104,26 @@ a {
 
 .menu-item:hover {
   background-color: #525357;
+}
+
+.card{
+  background-color: #646464;
+  padding: 1.5rem 1.75rem;
+  margin: auto;
+  cursor: pointer;
+  max-width: 300px;
+  font-family: Josefin Sans;
+
+  @media (min-width:480px) {
+      max-width: 480px;
+      padding: 2rem 2.5rem;
+  }
+}
+
+.experiences {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
