@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Major+Mono+Display&display=swap');
+
+:root { /* setting the default variables for use later */
+  --bg: rgb(20, 20, 20); /* default background color and accents */
+  --bg-accent: #fff;
+  --text-color: #fff;
+  --nav-size: 50px;
+  --border: 1px solid;
+  --border-radius: 8px;
+  --speed: 500ms; /* animation speed */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul { /* new default list style */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.contactbar {
+  height: var(--nav-size);
+  background-color: var(--bg);
+  padding: 0 1rem;
+  border-bottom: var(--border);
+}
+
+.contactbar-nav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* makes all the children start at the end */
+}
+
+.contact-item {
+  width: calc(var(--nav-size) * 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button {
+  --button-size: calc(var(--nav-size) * 0.5);
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: rgb(25, 25, 25);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+}
+
+.icon-button:hover {
+  filter: brightness(1.4);
+}
+
+.icon-button svg {
+  filter: invert(1);
+  width: 20px;
+  height: 20px;
+}
+
+.icon-animated {
+  animation: fadeInOut 0.5s forwards;
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
