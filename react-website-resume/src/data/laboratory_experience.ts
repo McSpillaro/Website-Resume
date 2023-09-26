@@ -1,4 +1,4 @@
-const accordionData = [
+const lab_experience_data = [
     {
       id: 1,
       title: "Undergraduate Researcher (June 2023 - Present)",
@@ -12,4 +12,4 @@ const accordionData = [
         "Analyzed the electrophilic bromination of 4-tert-butylphenol using copper (II) bromide using liquidliquid extraction, gravity filtration, and rotary evaporation. Constructed a multi-page report regarding the analytical data and results investigated during the experiment.",
     }
   ];
-  export default accordionData;
+  export default lab_experience_data;

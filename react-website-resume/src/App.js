@@ -1,13 +1,8 @@
 // Imports modules
 import React, { useState } from 'react';
-import { useRef } from "react";
-import { motion } from 'framer-motion';
 
-// Imports the data used for the 
-import accordionData from './data/laboratory_experience.ts';
-
-import AccordionItem from './AccordianItem.tsx';
-import "./Accordian.css";
+// Imports required functions from components
+import ExperienceAccordion from './components/ExperienceAccordion';
 
 // Imports SVG icons as specified name from icons folder
 import { ReactComponent as PHONE_ICONE } from './icons/phone.svg'
@@ -34,7 +29,7 @@ function App() {
 
       {/* On page, shows expandable tabs with info on experience */}
       <section className="experiences">
-        <Accordion></Accordion>
+        <ExperienceAccordion></ExperienceAccordion>
       </section>
     </div>
   );
@@ -82,44 +77,6 @@ function ContactItem(props) {
       {copied && props.children} {/* If copied states is true then it will show the children */}
     </li>
  );
-}
-
-function Accordion() {
-  const [active, setActive] = useState(null);
-
-  function handleToggle(index) {
-    if (active === index) {
-      return setActive(null);
-    }
-    setActive(index);
-  }
-
-  return (
-    <div className="container">
-      <h1>LABORATORY EXPERIENCE</h1>
-      <ul className="accordion">
-        {accordionData.map((item, index) => (
-          <AccordionItem
-            key={item.id} 
-            item={item}
-            active={active}
-            handleToggle={() => handleToggle(index)}
-          />
-        ))}
-      </ul>
-      <h1>WORK EXPERIENCE</h1>
-      <ul className="accordion">
-        {accordionData.map((item, index) => (
-          <AccordionItem
-            key={item.id} 
-            item={item}
-            active={active}
-            handleToggle={() => handleToggle(index)}
-          />
-        ))}
-      </ul>
-    </div>
-  );
 }
 
 export default App;

@@ -16,6 +16,7 @@ function AccordionItem({ item, active, handleToggle }: AccordionItemProps) {
   return (
     <li className="accordion-item">
       <div>
+        {/* Handles clicking function of the accordion item */}
         <h2 onClick={() => handleToggle(item.id)} className="accordion-title">
           {item.title} <span>{item.id === active ? "-" : "+"}</span>
         </h2>
