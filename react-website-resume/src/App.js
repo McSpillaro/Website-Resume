@@ -1,7 +1,11 @@
+// Imports modules
 import React, { useState } from 'react';
 import { useRef } from "react";
 import { motion } from 'framer-motion';
+
+// Imports the data used for the 
 import accordionData from './data/laboratory_experience.ts';
+
 import AccordionItem from './AccordianItem.tsx';
 import "./Accordian.css";
 
@@ -28,6 +32,7 @@ function App() {
         </ContactBar>
       </header>
 
+      {/* On page, shows expandable tabs with info on experience */}
       <section className="experiences">
         <Accordion></Accordion>
       </section>
@@ -92,6 +97,17 @@ function Accordion() {
   return (
     <div className="container">
       <h1>LABORATORY EXPERIENCE</h1>
+      <ul className="accordion">
+        {accordionData.map((item, index) => (
+          <AccordionItem
+            key={item.id} 
+            item={item}
+            active={active}
+            handleToggle={() => handleToggle(index)}
+          />
+        ))}
+      </ul>
+      <h1>WORK EXPERIENCE</h1>
       <ul className="accordion">
         {accordionData.map((item, index) => (
           <AccordionItem

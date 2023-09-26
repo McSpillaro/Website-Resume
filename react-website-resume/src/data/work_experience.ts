@@ -12,4 +12,5 @@ const accordionData = [
         "Analyzed the electrophilic bromination of 4-tert-butylphenol using copper (II) bromide using liquidliquid extraction, gravity filtration, and rotary evaporation. Constructed a multi-page report regarding the analytical data and results investigated during the experiment.",
     }
   ];
+  
   export default accordionData;
