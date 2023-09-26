@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Major+Mono+Display&display=swap');
 
+:root { /* setting the default variables for use later */
+  --txt-color: #061F28;
+  --bg-color: #EDF9FD;
+  --primary-color: #EDF9FD;
+  --secondary-color: #C9EBF8;
+  --accent-color: #FF4900;
+}
+
 .header {
     position: fixed;
     display: flex;
