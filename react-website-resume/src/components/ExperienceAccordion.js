@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Swiper from 'swiper';
 
 // Imports the data needed for the experience section
 import lab_experience_data from '../data/laboratory_experience.ts';
@@ -15,11 +16,11 @@ function ExperienceAccordion() {
       }
       setActive(index);
     }
-  
+
     return (
       <div className="container">
         <div className='experience-section'>
-          <h1>LABORATORY EXPERIENCE</h1>
+        <h1>LABORATORY EXPERIENCE</h1>
           <ul className="experience-info">
             {lab_experience_data.map((item) => (
               <AccordionItem

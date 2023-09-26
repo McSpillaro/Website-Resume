@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Major+Mono+Display&display=swap');
+
+:root { /* setting the default variables for use later */
+  --bg: rgb(20, 20, 20); /* default background color and accents */
+  --bg-accent: #fff;
+  --text-color: #fff;
+  --nav-size: 50px;
+  --border: 1px solid;
+  --border-radius: 8px;
+  --speed: 500ms; /* animation speed */
+  --margin: auto;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul { /* new default list style */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.experiences {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1f1f1f;
+}
