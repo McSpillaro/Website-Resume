@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Major+Mono+Display&display=swap');
 
+:root { /* setting the default variables for use later */
+  --txt-color: #061F28; /* rgb(6, 31, 40) -- hsl(196, 74%, 9%)*/
+  --bg-color: #EDF9FD; /* rgb(237, 249, 253) -- hsl(195, 80%, 96%)*/
+  --primary-color: #EFA78A; /* rgb(239, 167, 138) -- hsl(17, 76%, 74%)*/
+  --secondary-color: #C9EBF8; /* rgb(201, 235, 248) -- hsl(197, 77%, 88%)*/
+  --accent-color: #FF4900; /* rgb(255, 73, 0) -- hsl(17, 100%, 50%)*/
+}
+
 .container {
-  background-color: #111111;
+  background-color: #EDF9FD;
   width: 100%;
   padding: 0 10rem;
   margin: 0 auto;
@@ -10,7 +18,7 @@
   font-family: Josefin Sans;
   font-weight: 900;
   font-size: 2.5rem;
-  color: #e1e1e1;
+  color: var(--txt-color);
   margin-top: 50px;
   margin-bottom: 2rem;
   text-align: center;
@@ -18,17 +26,17 @@
 
 .accordion-item {
   list-style: none;
-  background-color: #222222;
+  background-color: var(--primary-color);
   padding: 1.25rem;
   border-radius: 10px;
-  border: 1px solid #6d6c6d;
+  border: 1px solid var(--accent-color);
 }
 
 .accordion-title {
   font-family: Josefin Sans;
   font-size: 1.25rem;
   font-weight: 500;
-  color: #e1e1e1;
+  color: var(--txt-color);
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -42,7 +50,7 @@
 .accordion-content {
   font-family: Josefin Sans;
   font-weight: 300;
-  color: #8b8b8b;
+  color: var(--txt-color);
   height: 0;
   overflow: hidden;
   transition: all ease-out 0.3s;
@@ -70,21 +78,4 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.swiper {
-  --swiper-theme-color: cyan;
-  --swiper-pagination-bullet-size: 10px;
-  --swiper-pagination-bullet-inactive-color: #fff;
-  --swiper-pagination-bullet-inactive-opacity: 0.4;
-}
-
-.swiper {
-  max-width: 800px;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
