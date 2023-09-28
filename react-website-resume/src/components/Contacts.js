@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../styles/Socials.css';
+import '../styles/Contacts.css';
 
 import { ReactComponent as PHONE } from '../icons/call-outline.svg';
 import { ReactComponent as EMAIL } from '../icons/mail-outline.svg';

@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <header id='header-title'>
-        {/* <Header></Header> */}
+        <Header></Header>
       </header>
       <div>
         <Contacts />
