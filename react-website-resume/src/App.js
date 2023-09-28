@@ -12,7 +12,7 @@ import ExperienceAccordion from './components/ExperienceAccordion';
 function App() {
 
   return (
-    <>
+    <body>
       <header id='header-title'>
         <Header></Header>
       </header>
@@ -21,10 +21,17 @@ function App() {
       </div>
 
       {/* On page, shows expandable tabs with info on experience */}
-      <section className="experiences">
-        <ExperienceAccordion></ExperienceAccordion>
+      <section>
+        <div className='style-test'>&nbsp;{/* tmp : for style testing */}</div>
+        <div className='section-title'>EXPERIENCE</div>
+        <ExperienceAccordion className='middle-section'></ExperienceAccordion>
+        <div className='style-test'>&nbsp;{/* tmp : for style testing */}</div>
       </section>
-    </>
+      <section>
+        <ExperienceAccordion className='middle-section'></ExperienceAccordion>
+        <div className='style-test'>&nbsp;{/* tmp : for style testing */}</div>
+      </section>
+    </body>
   );
 }
 

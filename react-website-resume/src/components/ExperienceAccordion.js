@@ -20,7 +20,7 @@ function ExperienceAccordion() {
   return (
     <div className="container-experiences">
       <div className='experience-section'>
-        <h1>LABORATORY EXPERIENCE</h1>
+        <h1>LABORATORY</h1>
         <ul className="experience-info">
           {lab_experience_data.map((item) => (
             <AccordionItem
@@ -32,8 +32,9 @@ function ExperienceAccordion() {
           ))}
         </ul>
       </div>
+      <hr></hr>
       <div className='experience-section'>
-        <h1>WORK EXPERIENCE</h1>
+        <h1>WORK</h1>
         <ul className="experience-info">
           {work_experience_data.map((item) => (
             <AccordionItem

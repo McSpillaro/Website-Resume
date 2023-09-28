@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Major+Mono+Display&display=swap");
 
-:root {
-  /* setting the default variables for use later */
-  --txt-color: #061f28;
-  /* rgb(6, 31, 40) -- hsl(196, 74%, 9%)*/
-  --bg-color: #edf9fd;
-  /* rgb(237, 249, 253) -- hsl(195, 80%, 96%)*/
-  --primary-color: #efa78a;
-  /* rgb(239, 167, 138) -- hsl(17, 76%, 74%)*/
-  --secondary-color: #c9ebf8;
-  /* rgb(201, 235, 248) -- hsl(197, 77%, 88%)*/
-  --accent-color: #ff4900;
-  /* rgb(255, 73, 0) -- hsl(17, 100%, 50%)*/
-  --accent-grad-1: #ff7b00;
-  --accent-grad-2: #ff804d;
-}
-
 * {
   box-sizing: border-box;
   font-family: Josefin Sans;
@@ -176,8 +160,8 @@
 }
 
 .container-contacts ul .text-contacts {
-  color: var(--txt-color);
-  font-weight: 400;
+  color: #ffffff;
+  font-weight: 300;
   font-size: 1.25rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;

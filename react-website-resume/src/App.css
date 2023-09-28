@@ -1,12 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Major+Mono+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Major+Mono+Display&display=swap");
 
-:root { /* setting the default variables for use later */
-  --txt-color: #061F28; /* rgb(6, 31, 40) -- hsl(196, 74%, 9%)*/
-  --bg-color: #EDF9FD; /* rgb(237, 249, 253) -- hsl(195, 80%, 96%)*/
-  --primary-color: #EFA78A; /* rgb(239, 167, 138) -- hsl(17, 76%, 74%)*/
-  --secondary-color: #C9EBF8; /* rgb(201, 235, 248) -- hsl(197, 77%, 88%)*/
-  --accent-color: #FF4900; /* rgb(255, 73, 0) -- hsl(17, 100%, 50%)*/
+:root {
+  /* setting the default variables for use later */
+  --txt-color: #0d0d0d;
+  --bg-color: #f2f2f2;
+  --primary-color: #0066ff;
+  --secondary-color: #242424;
+  --accent-color: #ff4400;
+  --accent-grad-1: #ff4400;
+  --accent-grad-2: #ff5e23;
+}
+
+/* Centers all content in the middle of the screen */
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 *,
@@ -17,7 +28,8 @@
   box-sizing: border-box;
 }
 
-ul { /* new default list style */
+ul {
+  /* new default list style */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -28,9 +40,46 @@ a {
   text-decoration: none;
 }
 
-.experiences {
+header {
+  display: grid;
+  justify-content: center;
+  z-index: 100;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: var(--bg-color);
+
+  background-color: #ffaf92;
+}
+
+section .section-title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  place-self: center;
+
+  width: 50vw;
+  text-align: center;
+  padding-top: 1%;
+
+  font-weight: 900;
+  font-size: 300%;
+
+  background: var(--accent-color);
+  color: var(--primary-color);
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: 0 5px 25px #000000cc;
+}
+
+.empty-section {
+  display: none;
+  height: 100%;
 }

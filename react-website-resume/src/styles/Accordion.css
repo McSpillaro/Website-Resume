@@ -1,25 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Major+Mono+Display&display=swap");
 
-:root {
-  /* setting the default variables for use later */
-  --txt-color: #061f28; /* rgb(6, 31, 40) -- hsl(196, 74%, 9%)*/
-  --bg-color: #edf9fd; /* rgb(237, 249, 253) -- hsl(195, 80%, 96%)*/
-  --primary-color: #efa78a; /* rgb(239, 167, 138) -- hsl(17, 76%, 74%)*/
-  --secondary-color: #c9ebf8; /* rgb(201, 235, 248) -- hsl(197, 77%, 88%)*/
-  --accent-color: #ff4900; /* rgb(255, 73, 0) -- hsl(17, 100%, 50%)*/
+.container-experiences {
+  background-color: var(--secondary-color);
+  width: 68%;
+  padding: 0 5rem;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 0 0 25px #000000cc;
 }
 
-.container-experiences {
-  background-color: #edf9fd;
-  width: 100%;
-  padding: 0 10rem;
-  margin: 0 auto;
-}
 .container-experiences h1 {
   font-family: Josefin Sans;
   font-weight: 900;
   font-size: 2.5rem;
-  color: var(--txt-color);
+  color: var(--bg-color);
   margin-top: 50px;
   margin-bottom: 2rem;
   text-align: center;
@@ -27,10 +21,10 @@
 
 .accordion-item {
   list-style: none;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   padding: 1.25rem;
   border-radius: 10px;
-  border: 1px solid var(--accent-color);
+  box-shadow: 0 10px 25px #0000003d;
 }
 
 .accordion-title {
@@ -45,12 +39,12 @@
 }
 
 .accordion-title > span {
-  color: #8b8b8b;
+  color: #141414;
 }
 
 .accordion-content {
   font-family: Josefin Sans;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--txt-color);
   height: 0;
   overflow: hidden;
