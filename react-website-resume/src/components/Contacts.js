@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import '../styles/Contacts.css';
 
-import { ReactComponent as PHONE } from '../icons/call-outline.svg';
-import { ReactComponent as EMAIL } from '../icons/mail-outline.svg';
+import { ReactComponent as PHONE_ICON } from '../icons/call-outline.svg';
+import { ReactComponent as EMAIL_ICON } from '../icons/mail-outline.svg';
 
 // Component that creates a mini socials menu on the bottom left of the screen
 function Contacts() {
@@ -15,12 +15,7 @@ function Contacts() {
     const [isCopied, setIsCopied] = useState(false); // Used for className change
     const [suffix, setSuffix] = useState("");
 
-    const handleChange = (event) => {
-        setSuffix(event.target.value);
-    };
-
     const handleClick = () => {
-        setIsCopied(true);
         // Changes the button label to say 'COPIED!'
         setContent(copiedLabel);
         // Handles which text to copy to clipboard based on button clicked
@@ -37,15 +32,23 @@ function Contacts() {
         }
     }
 
+    // Removes '-copioed' off the 'buttons-contact' after mouse leave
+    const revert = () => {
+        if (!isCopied) {
+            setSuffix('');
+        }
+    }
+
     return (
         <div className="container-contacts">
             <ul>
                 {/* PHONE BUTTON */}
-                <li // NOTE: using the ${} to add to the contact will change its style
-                    // TRY TO CREATE SAME STYLE IN CSS FILE TO BUG FIX
-                    className={`buttons-contacts`}
-                    // Resets the label text to default on enter
+                <li
+                    className={`buttons-contacts${suffix}`}
+                    // Resets the label to default on enter
                     onMouseEnter={() => {
+                        setLabelType('P');
+                        revert();
                         setContent(phoneLabel)
                     }}
                     // Resets the label text to default on leave
@@ -56,13 +59,16 @@ function Contacts() {
                     /* Handles copy & paste functionality */
                     onClick={() => {
                         setIsCopied(true);
-                        setLabelType('P');
                         handleClick();
                     }}
+                    // Resets the className for button-contacts
+                    onMouseOut={() => {
+                        revert();
+                    }}
                 >
-                    <span className="icon-contacts">
+                    <PHONE_ICON className="icon-contacts">
 
-                    </span>
+                    </PHONE_ICON>
                     <span
                         className="text-contacts"
                         id="phone"
@@ -73,8 +79,10 @@ function Contacts() {
                 {/* EMAIL BUTTON */}
                 <li
                     className={`buttons-contacts${suffix}`}
-                    // Resets the label text to default on enter
+                    // Resets the label to default on enter
                     onMouseEnter={() => {
+                        setLabelType('E');
+                        revert();
                         setContent(emailLabel)
                     }}
                     // Resets the label text to default on leave
@@ -85,13 +93,16 @@ function Contacts() {
                     /* Handles copy & paste functionality */
                     onClick={() => {
                         setIsCopied(true);
-                        setLabelType('E');
                         handleClick();
                     }}
+                    // Resets the className for button-contacts
+                    onMouseOut={() => {
+                        revert();
+                    }}
                 >
-                    <span className="icon-contacts">
+                    <EMAIL_ICON className="icon-contacts">
 
-                    </span>
+                    </EMAIL_ICON>
                     <span
                         className="text-contacts"
                         id="email"
