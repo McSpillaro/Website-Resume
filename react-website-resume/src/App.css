@@ -72,8 +72,8 @@ section .section-title {
   font-weight: 900;
   font-size: 300%;
 
-  background: var(--accent-color);
-  color: var(--primary-color);
+  background: var(--bg-color);
+  color: var(--secondary-color);
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   box-shadow: 0 5px 25px #000000cc;
